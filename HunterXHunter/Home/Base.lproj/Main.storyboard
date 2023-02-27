@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="um5-eC-9ki">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5SS-X7-d66">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="um5-eC-9ki" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B3g-EM-dmU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="urn-57-2cw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECq-Oo-vVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124.42748091603053" y="-36.619718309859159"/>
+        </scene>
+        <!--Hunter X Hunter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HunterXHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hunterLogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="stR-Ym-lWc">
+                                <rect key="frame" x="0.0" y="103" width="393" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="WMy-d4-v6E"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V4i-YF-jFa">
+                                <rect key="frame" x="0.0" y="343" width="393" height="475"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V4i-YF-jFa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7XS-Du-l7X"/>
+                            <constraint firstItem="stR-Ym-lWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NV3-Hs-e8E"/>
+                            <constraint firstItem="stR-Ym-lWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cmo-fb-0wn"/>
+                            <constraint firstItem="stR-Ym-lWc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eFH-fp-4mI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="V4i-YF-jFa" secondAttribute="bottom" id="gC3-LD-hp8"/>
+                            <constraint firstItem="V4i-YF-jFa" firstAttribute="top" secondItem="stR-Ym-lWc" secondAttribute="bottom" constant="20" id="ipX-OV-SxG"/>
+                            <constraint firstItem="stR-Ym-lWc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jgA-qm-n8e"/>
+                            <constraint firstItem="V4i-YF-jFa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="npX-mc-SBW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V4i-YF-jFa" secondAttribute="trailing" id="v71-aJ-1Uq"/>
+                            <constraint firstItem="V4i-YF-jFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vRT-r5-Ra5"/>
+                            <constraint firstItem="V4i-YF-jFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yd6-8U-koj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hunter X Hunter" id="I3C-mK-32G"/>
+                    <connections>
+                        <outlet property="imageLogo" destination="stR-Ym-lWc" id="CEr-Vj-obg"/>
+                        <outlet property="tableView" destination="V4i-YF-jFa" id="1tk-Nm-XVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756.48854961832058" y="-37.323943661971832"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hunterLogoImage" width="1600" height="900"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
